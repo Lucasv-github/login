@@ -4,4 +4,7 @@ scoreboard players reset @s login
 
 tag @s remove login_unverified
 
-function login:end_setup
+function login:load_player_data
+
+
+tag @s remove login_last_unauthenticated

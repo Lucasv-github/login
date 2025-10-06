@@ -8,4 +8,7 @@ tag @s remove login_unverified
 
 tag @s add login_password
 
-function login:end_setup
+function login:load_player_data
+
+
+tag @s remove login_last_unauthenticated

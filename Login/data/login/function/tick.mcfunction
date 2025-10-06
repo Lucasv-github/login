@@ -1,9 +1,6 @@
 execute as @a unless score @s login_leave matches 0 run function login:joined_game
 
-execute as @a[tag=login_unverified] run function login:lock
-
-#Only way without a race condition I found
-execute as @e[type=minecraft:armor_stand,tag=login_locker] unless predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"passenger":{"type":"minecraft:player"}}} run kill @s
+tp @a[tag=login_unverified] 0 -120 0
 
 scoreboard players enable @a[tag=login_unverified] login
 scoreboard players enable @a[tag=login_password,tag=!login_unverified] change_password
