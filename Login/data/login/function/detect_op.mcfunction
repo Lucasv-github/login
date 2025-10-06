@@ -1,0 +1,1 @@
+execute store result score @s login_op run deop @s[type=player]

@@ -1,0 +1,1 @@
+execute at @s as @e[limit=1,sort=nearest,type=minecraft:armor_stand,tag=login_locker] if score @s login_id = @p login_id run ride @p mount @s
