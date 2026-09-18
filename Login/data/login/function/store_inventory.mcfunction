@@ -1,5 +1,3 @@
-#say store inventory
-
 #Clear old
 scoreboard players operation Temp reg_1 = @s login_id
 
@@ -99,7 +97,6 @@ item replace entity @e[type=minecraft:chest_minecart, limit=1, tag=current_stora
 item replace entity @e[type=minecraft:chest_minecart, limit=1, tag=current_storage,tag=login_echest_storage] container.24 from entity @s enderchest.24
 item replace entity @e[type=minecraft:chest_minecart, limit=1, tag=current_storage,tag=login_echest_storage] container.25 from entity @s enderchest.25
 item replace entity @e[type=minecraft:chest_minecart, limit=1, tag=current_storage,tag=login_echest_storage] container.26 from entity @s enderchest.26
-
 
 tag @e[type=minecraft:chest_minecart,tag=login_hotbar_storage, tag=current_storage] remove current_storage
 

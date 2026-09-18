@@ -14,7 +14,9 @@ scoreboard objectives add login_xp dummy
 
 scoreboard objectives add login_counter dummy
 
+scoreboard players set 20 reg_1 20
+
 #Keep storages loaded
 forceload add 0 0
 
-tellraw @a {"text":"Login (1.21.x)-5 Loaded","bold":true,"color":"gold"}
+tellraw @a {"text":"Login (1.21.x, 26.1.x, 26.2.x, 26.3.x)-11 Loaded","bold":true,"color":"gold"}
