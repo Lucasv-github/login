@@ -14,4 +14,7 @@ execute store result score @s login_z run data get entity @s Pos[2]
 #Xp
 execute store result score @s login_xp run xp query @s points
 
+#Vehicle (saved in vehicle to prevent us from having to have entity id for all)
+execute at @s on vehicle run scoreboard players operation @s login_re_ride_id = @p login_id
+
 function login:store_inventory

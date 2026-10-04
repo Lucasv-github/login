@@ -17,9 +17,10 @@ execute as @a[tag=login_password] unless score @s login matches 0 if score @s lo
 
 execute as @a[tag=!login_unverified] unless score @s change_password matches 0 if score @s change_password matches -2147483647.. run function login:change_password
 
-scoreboard players add Temp login_counter 1
+#Vehicle restore check, need to be here because else it isn't loaded
+execute as @e[scores={login_re_ride_id=0..}] run function login:set_passenger
 
-execute if score Temp login_counter matches 200..
+scoreboard players add Temp login_counter 1
 
 scoreboard players operation Temp reg_1 = Temp login_counter
 scoreboard players operation Temp reg_1 %= 20 reg_1
